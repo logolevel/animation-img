@@ -29,6 +29,10 @@ header {
     height: calc(100vh - 80px);
 }
 
+.first__content > div {
+    margin-bottom: 100px;
+}
+
 .first__bg {
     background-image: url(https://uploads.notanotherbill.com/_width2000/Not-Another-Bill.Home.Banner.2634.jpg?mtime=20180306113139);
     position: absolute;
@@ -39,9 +43,16 @@ header {
     width: 100%;
     height: 100%;
     background-size: cover;
-    background-position: 50%;
+    background-position: center center;
+    transform: scale(1);
+    transition: all 0.5s ease;
 }
 
-.first__general{
-    display: none;
+.first-view-enabled {
+    overflow: hidden;
 }
+
+.first-view-enabled .first__bg {
+    transform: scale(1.3);
+}
+

@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="first-view-enabled">
     <header>
         <h1>FatFace header 1</h1>
     </header>
@@ -15,11 +15,11 @@
         <section class="first">
             <div class="first__bg"></div>
             <div class="first__content">
-                <div class="first__welcome-text">
+                <div class="first__welcome-text" style="opacity: 0;">
                     <h2>Block will be hide after 5 second</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, nam?</p>
                 </div>
-                <div class="first__general">
+                <div class="first__general" style="display: none">
                     <h2>General title Lorem ipsum dolor sit.</h2>
                     <p>Lorem ipsum dolor sit amet.</p>
                 </div>
@@ -30,6 +30,6 @@
         </section>
     </main>
 </body>
-<script src="jquery-2.1.1.min.js"></script>
+<script src="js/jquery-2.1.1.min.js"></script>
 <script src="js/script.js"></script>
 </html>
